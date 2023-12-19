@@ -13,12 +13,12 @@
  * 
  * Aşağıdaki kodlar bu görevin nasıl yapılacağına örnek olacaktır
  * Bu fonskiyon 'asas' dönmeli(return)
-*/
+ */
 
 function ilkiniDon(stringArray, callback) {
-  return callback(stringArray[0])
+    return callback(stringArray[0])
 }
-console.log('örnek görev:', ilkiniDon(['as','sa'],function(metin){return metin+metin}));
+console.log('örnek görevvvv:', ilkiniDon(['as', 'sa'], function(metin) { return metin + metin }));
 
 // Başlangıç Challenge'ı Sonu
 
@@ -38,10 +38,10 @@ console.log('örnek görev:', ilkiniDon(['as','sa'],function(metin){return metin
 
 // skor1 kodları
 function skorArtirici() {
-  let skor = 0;
-  return function skorGuncelle() {
-   return skor++;
-  }
+    let skor = 0;
+    return function skorGuncelle() {
+        return skor++;
+    }
 }
 
 const skor1 = skorArtirici();
@@ -50,7 +50,7 @@ const skor1 = skorArtirici();
 let skor = 0;
 
 function skor2() {
-  return skor++;
+    return skor++;
 }
 
 
@@ -64,7 +64,7 @@ Aşağıdaki takimSkoru() fonksiyonununda aşağıdakileri yapınız:
 Not: Bu fonskiyon, aşağıdaki diğer görevler için de bir callback fonksiyonu olarak da kullanılacak
 */
 
-function takimSkoru(/*Kodunuzu buraya yazınız*/){
+function takimSkoru( /*Kodunuzu buraya yazınız*/ ) {
     /*Kodunuzu buraya yazınız*/
 }
 
@@ -84,10 +84,10 @@ Aşağıdaki macSonucu() fonksiyonununda aşağıdakileri yapınız:
   "EvSahibi": 92,
   "KonukTakim": 80
 }
-*/ 
+*/
 
-function macSonucu(/*Kodunuzu buraya yazınız*/){
-  /*Kodunuzu buraya yazınız*/
+function macSonucu( /*Kodunuzu buraya yazınız*/ ) {
+    /*Kodunuzu buraya yazınız*/
 }
 
 
@@ -109,8 +109,8 @@ Aşağıdaki periyotSkoru() fonksiyonununda aşağıdakileri yapınız:
   */
 
 
-function periyotSkoru(/*Kodunuzu buraya yazınız*/) {
-  /*Kodunuzu buraya yazınız*/
+function periyotSkoru( /*Kodunuzu buraya yazınız*/ ) {
+    /*Kodunuzu buraya yazınız*/
 
 }
 
@@ -146,26 +146,26 @@ MAÇ UZAR ise skorTabelasi(periyotSkoru,takimSkoru,4)
 ] */
 // NOTE: Bununla ilgili bir test yoktur. Eğer logladığınız sonuçlar yukarıdakine benziyor ise tmamlandı sayabilirsiniz.
 
-function skorTabelasi(/*Kodunuzu buraya yazınız*/) {
-  /*Kodunuzu buraya yazınız*/
+function skorTabelasi( /*Kodunuzu buraya yazınız*/ ) {
+    /*Kodunuzu buraya yazınız*/
 }
 
 
 
 
 /* Aşağıdaki satırları lütfen değiştirmeyiniz*/
-function sa(){
-  console.log('Kodlar çalışıyor');
-  return 'as';
+function sa() {
+    console.log('Kodlar çalışıyor');
+    return 'as';
 }
 sa();
 module.exports = {
-  sa,
-  ilkiniDon,
-  skor1,
-  skor2,
-  takimSkoru,
-  macSonucu,
-  periyotSkoru,
-  skorTabelasi,
+    sa,
+    ilkiniDon,
+    skor1,
+    skor2,
+    takimSkoru,
+    macSonucu,
+    periyotSkoru,
+    skorTabelasi,
 }
